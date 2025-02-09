@@ -59,7 +59,7 @@ function updateTask(taskId, newText) {
 ```
 
 ### What I Learned:
-Using .map() to iterate and update an item in an array.
+Using ```.map()``` to iterate and update an item in an array.
 Spreading (...task) properties to modify only specific fields.
 
 
@@ -84,43 +84,52 @@ Local Storage is a built-in web API that provides a key-value store inside the b
 ##    ✅ localStorage.setItem(key, value)
 Stores data in Local Storage.
 
-javascript
-Copy
-Edit
+```javascript
 localStorage.setItem("username", "Edward");
-✅ localStorage.getItem(key)
+```
+
+
+## ✅ localStorage.getItem(key)
 Retrieves stored data.
 
-javascript
-Copy
-Edit
+```javascript
 let name = localStorage.getItem("username");  // "Edward"
-✅ localStorage.removeItem(key)
+```
+
+
+## ✅ localStorage.removeItem(key)
 Deletes a specific key from storage.
 
-javascript
-Copy
-Edit
+```javascript
 localStorage.removeItem("username");
-✅ localStorage.clear()
+```
+
+
+## ✅ localStorage.clear()
 Clears all stored data.
 
-javascript
-Copy
-Edit
+```javascript
 localStorage.clear();
-What I Learned:
+```
+
+### What I Learned:
 How to manipulate localStorage with different methods.
 The importance of JSON.stringify() and JSON.parse() for storing complex data.
-🎨 Additional Features Implemented
+
+
+## 🎨 Additional Features Implemented
 Event Listeners: Used to capture user clicks, form submissions, and keyboard events.
 UI Toggling: Dynamically showing/hiding elements based on stored data.
 Error Handling: Preventing invalid inputs from being stored.
-🎯 Conclusion
+
+
+## 🎯 Conclusion
 This project deepened my understanding of front-end storage mechanisms and how to make web applications persistent.
 Key takeaways:
 
 Local Storage is simple but powerful for saving user data.
 CRUD operations are fundamental to dynamic applications.
 JSON formatting is essential for storing structured data in localStorage.
+
+
 💡 Next Steps: Implementing IndexedDB for handling large-scale data storage.
